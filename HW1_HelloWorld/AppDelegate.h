@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  HW1_HelloWorld
 //
-//  Created by Kerem Gurses on 17.02.2021.
+//  Created by Kerem Grss on 17.02.2021.
 //
 
 #import <UIKit/UIKit.h>
