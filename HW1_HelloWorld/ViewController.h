@@ -9,7 +9,7 @@
 
 @interface ViewController : UIViewController
 @property (nonatomic,strong) IBOutlet UILabel *myLabel;
-
-
+@property (nonatomic,strong) IBOutlet UISlider *slider;
+@property (nonatomic,strong) IBOutlet UILabel *secondLabel;
 @end
 

@@ -13,7 +13,7 @@
 
 @implementation ViewController
 @synthesize myLabel;
-
+@synthesize secondLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +23,14 @@
 - (IBAction)buttonClicked:(id)sender{
     [myLabel setText:@"App is Working Correctly!"];
     
+}
+- (IBAction) sliderChange:(id)sender{
+    UISlider *slider = (UISlider *)sender;
+    NSString *newValue;
+    
+    newValue = [NSString stringWithFormat:@"%f" , slider.value];
+    
+    self.secondLabel.text = newValue;
 }
 
 @end
