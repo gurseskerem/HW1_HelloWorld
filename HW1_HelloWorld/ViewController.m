@@ -37,20 +37,20 @@
 
 - (IBAction)animation:(id)sender{
     myImage1.animationImages = [[NSArray alloc]initWithObjects:
-                                [UIImage imageNamed:@"glasses.png"],
-                                [UIImage imageNamed:@"no_glasses.png"],
-                                [UIImage imageNamed:@"glasses.png"],
-                                [UIImage imageNamed:@"no_glasses.png"],
-                                [UIImage imageNamed:@"glasses.png"],
-                                [UIImage imageNamed:@"no_glasses.png"],
-                                [UIImage imageNamed:@"glasses.png"],
-                                [UIImage imageNamed:@"no_glasses.png"],
-                                [UIImage imageNamed:@"glasses.png"],
-                                [UIImage imageNamed:@"no_glasses.png"],
-                                [UIImage imageNamed:@"glasses.png"],
-                                [UIImage imageNamed:@"no_glasses.png"],
-                                [UIImage imageNamed:@"glasses.png"],
-                                [UIImage imageNamed:@"no_glasses.png"],nil];
+                                [UIImage imageNamed:@"image1.png"],
+                                [UIImage imageNamed:@"image2.png"],
+                                [UIImage imageNamed:@"image1.png"],
+                                [UIImage imageNamed:@"image2.png"],
+                                [UIImage imageNamed:@"image1.png"],
+                                [UIImage imageNamed:@"image2.png"],
+                                [UIImage imageNamed:@"image1.png"],
+                                [UIImage imageNamed:@"image2.png"],
+                                [UIImage imageNamed:@"image1.png"],
+                                [UIImage imageNamed:@"image2.png"],
+                                [UIImage imageNamed:@"image1.png"],
+                                [UIImage imageNamed:@"image2.png"],
+                                [UIImage imageNamed:@"image1.png"],
+                                [UIImage imageNamed:@"image2.png"],nil];
     [myImage1 setAnimationDuration:2];
     myImage1.animationDuration = 2.0;
     [myImage1 startAnimating];
