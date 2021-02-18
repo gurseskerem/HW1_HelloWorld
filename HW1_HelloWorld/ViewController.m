@@ -14,6 +14,8 @@
 @implementation ViewController
 @synthesize myLabel;
 @synthesize secondLabel;
+@synthesize myImage1;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,7 +23,7 @@
 }
 
 - (IBAction)buttonClicked:(id)sender{
-    [myLabel setText:@"App is Working Correctly!"];
+    [myLabel setText:@"HELLO HOOMAN!!!"];
     
 }
 - (IBAction) sliderChange:(id)sender{
@@ -31,6 +33,28 @@
     newValue = [NSString stringWithFormat:@"%f" , slider.value];
     
     self.secondLabel.text = newValue;
+}
+
+- (IBAction)animation:(id)sender{
+    myImage1.animationImages = [[NSArray alloc]initWithObjects:
+                                [UIImage imageNamed:@"glasses.png"],
+                                [UIImage imageNamed:@"no_glasses.png"],
+                                [UIImage imageNamed:@"glasses.png"],
+                                [UIImage imageNamed:@"no_glasses.png"],
+                                [UIImage imageNamed:@"glasses.png"],
+                                [UIImage imageNamed:@"no_glasses.png"],
+                                [UIImage imageNamed:@"glasses.png"],
+                                [UIImage imageNamed:@"no_glasses.png"],
+                                [UIImage imageNamed:@"glasses.png"],
+                                [UIImage imageNamed:@"no_glasses.png"],
+                                [UIImage imageNamed:@"glasses.png"],
+                                [UIImage imageNamed:@"no_glasses.png"],
+                                [UIImage imageNamed:@"glasses.png"],
+                                [UIImage imageNamed:@"no_glasses.png"],nil];
+    [myImage1 setAnimationDuration:2];
+    myImage1.animationDuration = 2.0;
+    [myImage1 startAnimating];
+    
 }
 
 @end
